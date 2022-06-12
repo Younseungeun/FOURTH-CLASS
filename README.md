@@ -59,6 +59,6 @@
       }
 
 ### buzzer
-
+![image](https://user-images.githubusercontent.com/102523600/173248978-e39f46b5-5f14-4b56-ba6a-e94a2bd9f680.png)
 ### CODE
      
