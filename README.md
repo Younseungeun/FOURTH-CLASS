@@ -35,8 +35,30 @@
 26. //The analog-to-digital converter is finished, read the las t value
 27. delay(20); // wait 2milliseconds를 before moving to next loop
 ### ultra sensor
-
+![image](https://user-images.githubusercontent.com/102523600/173248387-e1131813-2189-4fe9-a8a4-2a1093984b1c.png)
 ### CODE
+1. int echo_pin= 10; //connect eco pin to 10pin 
+2. int trig_pin= 11; //connect trig pin to 11pin 
+3. void setup() {
+4. Serial.begin(9600);
+5. pinMode(echo_pin,INPUT); //Set to INPUT because it receives
+6. pinMode(trig_pin,OUTPUT); //Set to OUTPUT because it sends
+7. }
+8. void loop() {
+9. float duration, distance ;
+10. digitalWrite(trig_pin,HIGH); //turn on trigr pin
+11. delay(10);//the trigger pin is fired for 10 millieseconds
+12. digitalWrite(trig_pin,LOW); //low
+13. duration = pulseIn( echo_pin,HIGH);      //Bring duration value 
+14. // the pulsIn function is in the form of pulsIn (pin number, pin state) and when the pin state changes,
+15. //Returns the time elapsed in ms (microseconds)
+16. distance = (float(duration/2) / 29.1);// The reason why we divide is because we go back and forth.
+         Serial.print(distance); //open the serial port to check the distance.
+         Serial.println("mm"); // the unit is milliemeter
+         delay(3);
+      }
+
 ### buzzer
+
 ### CODE
      
