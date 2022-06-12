@@ -34,5 +34,9 @@
 25. { digitalWrite(led,LOW); }           //turn off the LED
 26. //The analog-to-digital converter is finished, read the las t value
 27. delay(20); // wait 2milliseconds를 before moving to next loop
+### ultra sensor
 
+### CODE
+### buzzer
+### CODE
      
