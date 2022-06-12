@@ -5,7 +5,7 @@
 - ultra sensor
 - buzzer
 ### fuse LCD,CDS sensor and LED
-![image](https://user-images.githubusercontent.com/102523600/173246374-93151233-4fa5-4bab-b9f9-ba4e96c41790.png)
+![image](https://user-images.githubusercontent.com/102523600/173247564-bab5b82d-f234-4f10-a524-fee3ba4840c9.png)
 ### CODE
 1. #include <Wire.h> 
 2. #include <LiquidCrystal_I2C.h>      //LCD header file
