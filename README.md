@@ -59,6 +59,13 @@
       }
 
 ### buzzer
-![image](https://user-images.githubusercontent.com/102523600/173248978-e39f46b5-5f14-4b56-ba6a-e94a2bd9f680.png)
+![image](https://user-images.githubusercontent.com/102523600/173249031-0edf69c6-d9c9-494e-9b46-b2941ecee8ce.png)
 ### CODE
-     
+1. int buzzer= 5;     // connect the buzzer to pin 5
+2. void setup() 
+3. pinMode(buzzer,OUTPUT);   //the buzzer is expressed as an output, i.e. a result value
+4. }
+5. void loop() {
+6. digitalWrite(buzzer,HIGH);   // turn on the buzzer
+7. digitalWrite(buzzer,LOW);  //turn off the buzzer
+8. }
