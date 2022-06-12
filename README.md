@@ -21,9 +21,9 @@
 12. }                                  
 13. void loop() {
 14. lcd.clear();                    // clear the LCD
-15. lcd.setCursor(0,0);             //LCD의 첫 번째 줄 첫 번째 자리를 나타냄
+15. lcd.setCursor(0,0);             //Indicates the first line of the LCD 
 16. lcd.print("Hello,Every one!"); //print "Hello,Every one!"
-17. lcd.setCursor(0,1);            //LCD의 두 번째 줄 첫 번째 자리를 나타냄
+17. lcd.setCursor(0,1);            //Indicates the second line of the LCD 
 18. lcd.print("Welcome Reader!");  //print "Welcome Reader!"
 19. cdsValue  = analogRead(cds);   // read CDS sensor values
 20. Serial.print("sensor = ");          // Enter CDS sensor values on the SERIAL monitor
@@ -32,8 +32,7 @@
 23. { digitalWrite(led,HIGH); }          //turn on the LED
 24. else                                 //if not
 25. { digitalWrite(led,LOW); }           //turn off the LED
-//The analog-to-digital converter is finished, read the las t value
-delay(20); // wait 2milliseconds를 before moving to next loop
+26. //The analog-to-digital converter is finished, read the las t value
+27. delay(20); // wait 2milliseconds를 before moving to next loop
 
-  1.   }                              //LCD,LED,CDS끝
      
